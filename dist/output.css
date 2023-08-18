@@ -657,6 +657,10 @@ video {
   height: 50px;
 }
 
+.h-\[\] {
+  height: ;
+}
+
 .w-4 {
   width: 1rem;
 }
@@ -689,6 +693,22 @@ video {
   width: 80%;
 }
 
+.w-\[\] {
+  width: ;
+}
+
+.w-\[60\%\] {
+  width: 60%;
+}
+
+.w-\[50\%\] {
+  width: 50%;
+}
+
+.w-\[40\%\] {
+  width: 40%;
+}
+
 .items-end {
   align-items: flex-end;
 }
@@ -715,6 +735,10 @@ video {
 
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .border {
@@ -765,6 +789,11 @@ video {
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -784,12 +813,21 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .pl-10 {
   padding-left: 2.5rem;
 }
 
 .pl-3 {
   padding-left: 0.75rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
 }
 
 .text-sm {
@@ -831,6 +869,10 @@ video {
 
 .text-\[\] {
   color: ;
+}
+
+.text-\[16\] {
+  color: 16;
 }
 
 .loadingAnimation{
@@ -1036,6 +1078,10 @@ video {
 
   .md\:w-\[70\%\] {
     width: 70%;
+  }
+
+  .md\:w-\[40\%\] {
+    width: 40%;
   }
 
   .md\:justify-normal {
