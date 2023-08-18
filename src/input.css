@@ -51,5 +51,16 @@ border-bottom: 12px solid black;
 }
 .semHeadings{
     font-size: 18px;
+   
+}
+.semParagraph{
     color: #7e7e7e;
+    margin-top: 20px;
+}
+.semButton{
+    background-color: #272829;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    margin-top: 10px;
+    
 }

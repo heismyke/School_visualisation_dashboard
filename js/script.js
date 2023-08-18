@@ -17,20 +17,46 @@ async function fetchData() {
 
 fetchData()
     .then((data) => {
-        const keys = Object.keys(data);
-        const nestedKeys = Object.keys(data[keys[0]]);
-        
-        nestedKeys.forEach(function (sems){
+        const aptechStudents = data["Aptech students"];
+     
+        var numbers = 0
+        for(const semesterName in aptechStudents){
+
+            console.log(semesterName)
+
             var semesters = document.getElementById('semesters');
            
             var div = document.createElement("div");
             var headings = document.createElement("h1");
             div.classList.add('border','h-[200px]','md:h-[200px]','lg:h-[200px]', 'p-4','rounded-xl','bg-white','hidden','mainContent');
-            headings.textContent = sems;
+            headings.textContent = semesterName;
             headings.classList.add('semHeadings');
             div.appendChild(headings);
             semesters.appendChild(div);
 
+            
+          
+
+            if(aptechStudents.hasOwnProperty(semesterName)){
+                const semesterData = aptechStudents[semesterName];
+                const students = semesterData.students;
+
+                var studentsCount = students.length
+                var paragraph = document.createElement('p');
+                paragraph.classList.add('semParagraph');
+                paragraph.textContent = `No of students : ${studentsCount}` 
+                numbers += studentsCount
+                
+            }
+
+            div.appendChild(paragraph);
+
+            var buttons = document.createElement('button');
+
+            buttons.textContent = 'Learn more';
+
+            buttons.classList.add('semButton');
+            div.appendChild(buttons);
             
             setTimeout(() => {
                 var contents = document.querySelectorAll('.content'); 
@@ -44,7 +70,14 @@ fetchData()
                     mainContents[i].style.display = 'block';
                 }
             }, 5000);
-        });
+        }
+
+   
+        
+       
+        
+        
+      
     }).catch((err) => {
         console.error(err);
     });
