@@ -4,4 +4,4 @@ setTimeout(() => {
     loadingAnimation.style.display = 'none';
     mainWebsite.style.display = 'block';
 
-}, 5000);
+}, 1000);
