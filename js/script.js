@@ -24,9 +24,13 @@ fetchData()
         const keys = Object.keys(data);
         const nestedKeys = Object.keys(data[keys[0]]);
         
-        for (let i = 0; i < nestedKeys.length; i++) {
-            console.log(nestedKeys[i])
-        }
+        nestedKeys.forEach(function (sems){
+            var semesters = document.getElementById('semesters');
+            var div = document.createElement("div");
+            div.classList.add('border','h-[200px]','md:h-[200px]','lg:h-[300px]', 'p-4','rounded-xl')
+            div.textContent = sems
+            semesters.appendChild(div);
+        })
         
 
         
