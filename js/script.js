@@ -56,6 +56,12 @@ fetchData()
             buttons.textContent = 'Learn more';
 
             buttons.classList.add('semButton');
+
+            buttons.addEventListener('click', () =>{
+              
+               window.location.href = '../pages/table.html'
+            })
+
             div.appendChild(buttons);
             
             setTimeout(() => {
