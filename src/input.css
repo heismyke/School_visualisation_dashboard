@@ -49,7 +49,7 @@ border-bottom: 12px solid black;
 .input:focus{
     outline: none;
 }
-.block{
-    
-    height: 200px;
+.semHeadings{
+    font-size: 18px;
+    color: #7e7e7e;
 }

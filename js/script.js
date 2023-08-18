@@ -1,7 +1,3 @@
-
-
-
-
 async function fetchData() {
     try {
         const url = "https://aptech-g9bt.vercel.app/school.json";
@@ -26,16 +22,30 @@ fetchData()
         
         nestedKeys.forEach(function (sems){
             var semesters = document.getElementById('semesters');
+           
             var div = document.createElement("div");
-            div.classList.add('border','h-[200px]','md:h-[200px]','lg:h-[300px]', 'p-4','rounded-xl')
-            div.textContent = sems
+            var headings = document.createElement("h1");
+            div.classList.add('border','h-[200px]','md:h-[200px]','lg:h-[200px]', 'p-4','rounded-xl','bg-white','hidden','mainContent');
+            headings.textContent = sems;
+            headings.classList.add('semHeadings');
+            div.appendChild(headings);
             semesters.appendChild(div);
-        })
-        
 
-        
-    })
-    .catch((err) => {
+            
+            setTimeout(() => {
+                var contents = document.querySelectorAll('.content'); 
+                var mainContents = document.querySelectorAll('.mainContent');
+
+                for (var i = 0; i < contents.length; i++) {
+                    contents[i].style.display = 'none';
+                }
+                
+                for (var i = 0; i < mainContents.length; i++) {
+                    mainContents[i].style.display = 'block';
+                }
+            }, 5000);
+        });
+    }).catch((err) => {
         console.error(err);
     });
 

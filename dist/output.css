@@ -534,6 +534,18 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 .absolute {
   position: absolute;
 }
@@ -566,6 +578,10 @@ video {
 
 .ml-0 {
   margin-left: 0px;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
 }
 
 .flex {
@@ -612,6 +628,18 @@ video {
   height: 50px;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
+.h-\[\] {
+  height: ;
+}
+
+.h-\[20px\] {
+  height: 20px;
+}
+
 .w-\[100\%\] {
   width: 100%;
 }
@@ -634,6 +662,32 @@ video {
 
 .w-\[80\%\] {
   width: 80%;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[40\%\] {
+  width: 40%;
+}
+
+.w-\[20px\] {
+  width: 20px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
 }
 
 .grid-cols-1 {
@@ -705,6 +759,15 @@ video {
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
+.fill-blue-600 {
+  fill: #2563eb;
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -744,6 +807,11 @@ video {
 .text-\[\#7e7e7e\] {
   --tw-text-opacity: 1;
   color: rgb(126 126 126 / var(--tw-text-opacity));
+}
+
+.text-gray-200 {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
 .loadingAnimation{
@@ -799,8 +867,9 @@ video {
   outline: none;
 }
 
-.block{
-  height: 200px;
+.semHeadings{
+  font-size: 18px;
+  color: #7e7e7e;
 }
 
 .hover\:rounded-xl:hover {
@@ -815,6 +884,13 @@ video {
 .hover\:text-black:hover {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark\:text-gray-600 {
+    --tw-text-opacity: 1;
+    color: rgb(75 85 99 / var(--tw-text-opacity));
+  }
 }
 
 @media (min-width: 768px) {
@@ -893,6 +969,10 @@ video {
 
   .lg\:h-\[300px\] {
     height: 300px;
+  }
+
+  .lg\:h-\[200px\] {
+    height: 200px;
   }
 
   .lg\:w-\[80\%\] {
