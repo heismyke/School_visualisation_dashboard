@@ -46,3 +46,6 @@ border-right-width: 5px;
 border-left-width: 5px;
 border-bottom: 12px solid black;
 }
+.input:focus{
+    outline: none;
+}
