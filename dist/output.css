@@ -660,6 +660,14 @@ video {
   height: 100%;
 }
 
+.h-\[120vh\] {
+  height: 120vh;
+}
+
+.h-\[130vh\] {
+  height: 130vh;
+}
+
 .w-\[100\%\] {
   width: 100%;
 }
