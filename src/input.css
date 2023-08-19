@@ -72,19 +72,16 @@ border-bottom: 12px solid black;
 
 }
 .scrollBar::-webkit-scrollbar{
-  width: 0;
-  height: 0;
-  background-color: transparent;
+display: none;
+
 }
 
 .scrollBar::-webkit-scrollbar-thumb {
-  background-color: transparent;
-  width: 0;
-  height: 0;
+
+  display: none;
 }
 
 .scrollBar::-webkit-scrollbar-track {
-  background-color: transparent;
-  width: 0;
-  height: 0;
+  
+  display: none;
 }
