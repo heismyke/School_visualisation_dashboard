@@ -49,7 +49,7 @@ fetchData()
 
                 heading.textContent = key
                 div.appendChild(heading)
-                div.classList.add('eachHeader', 'flex', 'justify-start', 'pl-4', 'md:pl-0', 'items-center', 'w-full', 'md:w-[70%]','md:flex', 'md:justify-center', 'md:items-center',)
+                div.classList.add('eachHeader', 'flex', 'justify-start', 'pl-4', 'md:pl-0', 'items-center', 'w-full')
                 header.appendChild(div)
                 })
             }   
