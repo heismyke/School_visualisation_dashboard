@@ -933,7 +933,19 @@ video {
 .scrollBar::-webkit-scrollbar{
   width: 0;
   height: 0;
-  background-color: white;
+  background-color: transparent;
+}
+
+.scrollBar::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  width: 0;
+  height: 0;
+}
+
+.scrollBar::-webkit-scrollbar-track {
+  background-color: transparent;
+  width: 0;
+  height: 0;
 }
 
 .hover\:rounded-xl:hover {
