@@ -8,6 +8,7 @@ async function fetchData() {
             return data;
         } else {
             throw new Error("Error fetching data: " + response.status);
+            
         }
     } catch (err) {
         console.error(err);
@@ -77,12 +78,7 @@ fetchData()
                 }
             }, 5000);
         }
-
-   
-        
-       
-        
-        
+  
       
     }).catch((err) => {
         console.error(err);

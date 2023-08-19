@@ -64,3 +64,8 @@ border-bottom: 12px solid black;
     margin-top: 10px;
     
 }
+
+.eachHeader{
+  /* width: 16.6%; */
+  height: 70px;
+}
