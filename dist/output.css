@@ -688,6 +688,10 @@ video {
   width: 80%;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .min-w-\[500px\] {
   min-width: 500px;
 }
@@ -754,6 +758,10 @@ video {
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .overflow-x-scroll {
@@ -831,6 +839,14 @@ video {
 
 .pr-2 {
   padding-right: 0.5rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pl-0 {
+  padding-left: 0px;
 }
 
 .text-\[16px\] {
@@ -1035,6 +1051,10 @@ video {
     justify-content: normal;
   }
 
+  .md\:justify-center {
+    justify-content: center;
+  }
+
   .md\:px-\[0px\] {
     padding-left: 0px;
     padding-right: 0px;
@@ -1043,6 +1063,10 @@ video {
   .md\:py-\[50px\] {
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+
+  .md\:pl-0 {
+    padding-left: 0px;
   }
 
   .md\:text-2xl {
